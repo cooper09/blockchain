@@ -38,3 +38,8 @@ app.use(function(req, res, next) {
 
   //Add Web3 Goodies
   var ext = require('./web3-module');
+
+  //var stinky = ext.sampleFuncs.sampleFunc1();
+
+  console.log(`Guy: ${ext.sampleFuncs.sampleFunc1()}`);
+  console.log(`Girl: ${ext.sampleFuncs.sampleFunc2()}`);

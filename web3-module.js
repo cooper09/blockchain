@@ -1,4 +1,4 @@
-module.exports
+
   
 console.log("external stinky")
  
@@ -15,5 +15,16 @@ web3.eth.getBalance(address, (err,bal) =>{
   var eth = web3.utils.fromWei(bal, 'ether');
   console.log("Balance: ", eth )
 })
+
+exports.sampleFuncs = {
+    sampleFunc1 () {
+        return 'Jim';
+      },
+      sampleFunc2 () {
+        return 'Jane';
+      }
+      
+    } //end sampleFuncs
+
 
   
