@@ -50,3 +50,7 @@ app.use(function(req, res, next) {
     var eth = web3.utils.fromWei(bal, 'ether');
     console.log("Balance: ", eth )
   })
+
+  var ext = require('./external')
+
+  ext.stinky();
