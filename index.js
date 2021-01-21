@@ -19,12 +19,18 @@ app.use(function(req, res, next) {
     next();
   });
 
+  console.log("Server up and running on port: ", port )
+
+  app.get("/", function(req, res) {
+      console.log("We're alive....")
+      res.send("Greetings from Earth!")
+  })
+
   app.get("/info",function (req,res) {
     var i = {
       'name':root_pkg.name,
       'version':root_pkg.version,
-      'description':root_pkg.description,
-      'ezbake':root_pkg.dependencies.ezbake
+      'description':root_pkg.description
 
     };
     res.send(i);
