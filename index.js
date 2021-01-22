@@ -39,11 +39,10 @@ app.use(function(req, res, next) {
   //Add Web3 Goodies
   var ext = require('./web3-module');
 
-  console.log(`Guy: ${ext.sampleFuncs.sampleFunc1()}`);
-  console.log(`Girl: ${ext.sampleFuncs.sampleFunc2()}`);
+  //helper files
+  var helpers = require('./helpers');
+  var stinky = new helpers.helperClass('hello','there...')
+  console.log('stinky: ', stinky );
 
-  ext.func1();
-  ext.func2();
-
-  var stinky = new ext.sampleClass(10,20)
-  console.log('stinky: ', stinky )
+  helpers.func1();
+  helpers.func2();

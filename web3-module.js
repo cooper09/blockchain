@@ -29,29 +29,4 @@ web3.eth.getBalance(address, (err,bal) =>{
   })
 
 
-sampleFuncs = {
-    sampleFunc1 () {
-        return 'Jim';
-      },
-      sampleFunc2 () {
-        return 'Jane';
-      }
-      
-    } //end sampleFuncs
-
-    const func1 = () =>{
-        console.log("func1")
-    }
-    const func2 = () =>{
-        console.log("func2") 
-    }
-
-    class sampleClass {
-        constructor(height, width) {
-          this.height = height;
-          this.width = width;
-        }
-    }//end class
-
-    module.exports = {sampleFuncs, func1, func2, sampleClass}
   
