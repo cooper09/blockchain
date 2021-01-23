@@ -36,13 +36,15 @@ app.use(function(req, res, next) {
     res.send(i);
   });
 
-  //Add Web3 Goodies
-  var ext = require('./web3-module');
+  //Add Standard Metamask (ropnet) contract
+  var contract = require('./contract');
+  //let exchanges = require('./exchanges')
 
-  //helper files
+  try {
+    console.log("Lets get busy...")
+  } catch (error) {
+    console.log("Try blew up: ", error );
+  } //end try/catch
+
   var helpers = require('./helpers');
-  var stinky = new helpers.helperClass('hello','there...')
-  console.log('stinky: ', stinky );
-
-  helpers.func1();
-  helpers.func2();
+  helpers.func1("data");

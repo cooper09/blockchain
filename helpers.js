@@ -6,8 +6,8 @@ class helperClass {
   } 
 }
 
-const func1 = () =>{
-  console.log("helper func1")
+const func1 = (data) =>{
+  console.log("helper func1: ", data )
 }
 const func2 = () =>{
   console.log("helper func2") 
