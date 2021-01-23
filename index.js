@@ -42,6 +42,8 @@ app.use(function(req, res, next) {
 
   try {
     console.log("Lets get busy...")
+    var balance = contract.checkBalances();
+    console.log("contract balance: ", balance )
   } catch (error) {
     console.log("Try blew up: ", error );
   } //end try/catch

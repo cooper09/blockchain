@@ -36,7 +36,7 @@ let balance = 100;
     balance = await web3.eth.getBalance(address)
     balance = web3.utils.fromWei(balance, 'Ether')
     console.log("Contract.checkBalances - Ether Balance:", balance)
-  
+    return balance;
   }//end checkBalances
 
   module.exports = {balance, getBalance, checkBalances }
